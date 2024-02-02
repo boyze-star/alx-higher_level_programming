@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 def add_integer(a, b = 98):
     """this function adds two int or float together"""
-    if not isinstance(a, (int, float)):
+    if type(a) is not int and type(a) is not float:
         """checks if a is int or float"""
         raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
+    if type(b) is not int and type(b) is not float:
         """checks if b is int or float"""
         raise TypeError("b must be an integer")
 
-    a = int(a)
+    if type(a) is float:
+        a = int(a)
     """converts a to int if not"""
-    b = int(b)
+    if type(b) is float:
+        b = int(b)
     """converts b to int if not"""
 
     return (a + b)
