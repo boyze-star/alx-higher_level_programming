@@ -20,8 +20,3 @@ def add_integer(a, b = 98):
     """converts b to int if not"""
 
     return (a + b)
-
-if __name__ == "__main__":
-    """documentation included in add files and folders"""
-    print(__import__("my_module").__doc__)
-    print(__import__("my_module").add_integer.__doc__)
