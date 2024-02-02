@@ -23,3 +23,7 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     return [[round (i / div, 2)for i in l]for l in matrix]
+
+if __name__ == "__main__":
+    print(__import__("my_module").__doc__)
+    print(__import__("my_module").add_integer.__doc__)
