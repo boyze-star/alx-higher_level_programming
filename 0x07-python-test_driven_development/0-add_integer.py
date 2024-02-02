@@ -25,4 +25,4 @@ def add_integer(a, b = 98):
         b = int(b)
     """converts b to int if not"""
 
-    return (a + b)
+    return a + b
