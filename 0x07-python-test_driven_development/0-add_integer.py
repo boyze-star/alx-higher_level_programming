@@ -11,7 +11,10 @@ def add_integer(a, b = 98):
     if type(b) is not int and type(b) is not float:
         """checks if b is int or float"""
         raise TypeError("b must be an integer")
-
+    if type(a) is None:
+        raise TypeError("a must have a value")
+    if type(b) is None:
+        raise TypeError("b must have a value")
     if type(a) is float:
         a = int(a)
     """converts a to int if not"""
