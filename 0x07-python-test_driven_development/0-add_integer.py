@@ -12,8 +12,10 @@ def add_integer(a, b = 98):
         """checks if b is int or float"""
         raise TypeError("b must be an integer")
     if type(a) is None:
+        """checks for empty varient"""
         raise ValueError("a is empty")
     if type(b) is None:
+        """checks for empty varient"""
         raise ValueError("b is empty")
 
     if type(a) is float:
