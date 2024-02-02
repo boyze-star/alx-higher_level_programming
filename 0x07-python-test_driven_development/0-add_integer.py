@@ -7,6 +7,10 @@ def add_integer(a, b = 98):
     if type(b) is not int and type(b) is not float:
         """checks if b is int or float"""
         raise TypeError("b must be an integer")
+    if type(a) is None:
+        raise ValueError("a is empty")
+    if type(b) is None:
+        raise ValueError("b is empty")
 
     if type(a) is float:
         a = int(a)
@@ -18,6 +22,6 @@ def add_integer(a, b = 98):
     return (a + b)
 
 if __name__ == "__main__":
-    """documentation included in att files and folders"""
+    """documentation included in add files and folders"""
     print(__import__("my_module").__doc__)
     print(__import__("my_module").add_integer.__doc__)
