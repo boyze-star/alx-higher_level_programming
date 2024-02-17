@@ -1,0 +1,11 @@
+Pseudocode:
+1.function addstwo integers:
+	how?:
+		step_1:function uses prototype def add__integer(a, b = 98):
+		step_2:function calls on method to add item a & b.
+		step_3:returns result and stores it in a variable.
+		step_4:does routine check - if a & b are not integers or floats, raise TypeError with msg "a must be a
+		       integer or b must be an integer"
+		       if a & b are flots, they are to be casted first.
+		       returns integer addition of a & b.
+
